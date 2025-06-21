@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.max-width{
+    max-width: 1040px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+}
+.logo h1{
+   color: red;
+   
+}
+.logo span{
+    color: rgb(192, 192, 73);
+    padding-left: 10px;
+    
+}
+
+
+.manu {
+    display: flex;
+   
+    gap: 25px;
+    color: red;
+
+}
+.manu button{
+    background-color: red;
+    color: white;
+    padding: .2rem 1.5rem;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+}
+.manu button i{
+    padding-right: 5px;
+}
+.manu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+}
+.content-container .content{
+    display: flex;   
+   
+    flex-direction: column;
+    gap: 15px;
+    flex: 50%;
+   
+}
+.content-container .content span{
+    color: red;
+}
+.content-container .content h1{
+    font-size: 40px;
+}
+.content-container .content p{
+    font-size: 20px;
+    color: rgb(110, 107, 107);
+}
+.content-container .image{
+    flex: 35%;
+    position: relative;
+}
+.content-container .image img{
+  
+    width: 100%;
+    
+    
+}
+.content button{
+    padding: .5rem 2rem;
+    background: red;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: .3rem;
+    width: 8rem;
+    cursor: pointer;
+}
+.image p{
+    color: rgb(61, 60, 60);
+   
+
+}
+.web1{
+    border-radius: .2rem;
+    
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+}
+.web2{
+    position: absolute;
+    top: 32%;
+    right: 0;
+      font-size: 18px;
+}
+.web3{
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    font-size: 22px;
+}
+
+
+
+
+
+@media only screen and (max-width:600px){
+    body{
+     padding: auto;
+     margin: auto;
+        
+    }
+    nav{
+      
+      
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .manu{
+       justify-content: center;
+       align-items: center;
+        flex-direction: column;
+       
+    }
+    .manu button{
+        width: 7rem;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .content-container{
+        flex-direction: column-reverse;
+        
+       text-align: center;
+    }
+    .content-container .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
