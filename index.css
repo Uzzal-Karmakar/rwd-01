@@ -1,176 +1,249 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.max-width{
-    max-width: 1040px;
-    margin: auto;
-    margin-top: 10px;
-
+.max-width {
+  max-width: 1040px;
+  margin: auto;
+  margin-top: 10px;
 }
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem;
-    font-size: 1.1rem;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  font-size: 1.1rem;
 }
-.logo h1{
-   color: red;
-   
+.logo h1 {
+  color: red;
 }
-.logo span{
-    color: rgb(192, 192, 73);
-    padding-left: 10px;
-    
+.logo span {
+  color: rgb(192, 192, 73);
+  padding-left: 10px;
 }
-
 
 .manu {
-    display: flex;
-   
-    gap: 25px;
-    color: red;
+  display: flex;
 
+  gap: 25px;
+  color: red;
 }
-.manu button{
-    background-color: red;
-    color: white;
-    padding: .2rem 1.5rem;
-    border: none;
-    border-radius: .3rem;
-    cursor: pointer;
+.manu button {
+  background-color: red;
+  color: white;
+  padding: 0.2rem 1.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
-.manu button i{
-    padding-right: 5px;
+.manu button i {
+  padding-right: 5px;
 }
-.manu ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 15px;
+.manu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.content-container .content {
+  display: flex;
+
+  flex-direction: column;
+  gap: 15px;
+  flex: 50%;
+}
+.content-container .content span {
+  color: red;
+}
+.content-container .content h1 {
+  font-size: 40px;
+}
+.content-container .content p {
+  font-size: 20px;
+  color: rgb(110, 107, 107);
+}
+.content-container .image {
+  flex: 35%;
+  position: relative;
+}
+.content-container .image img {
+  width: 100%;
+}
+.content button {
+  padding: 0.5rem 2rem;
+  background: red;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 0.3rem;
+  width: 8rem;
+  cursor: pointer;
+}
+.image p {
+  color: rgb(61, 60, 60);
+}
+.web1 {
+  border-radius: 0.2rem;
+
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+}
+.web2 {
+  position: absolute;
+  top: 32%;
+  right: 0;
+  font-size: 18px;
+}
+.web3 {
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  font-size: 22px;
+}
+
+.main-card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.main-card {
+  display: flex;
+  gap: 25px;
+}
+.main-card h1 {
+  font-size: 2rem;
+}
+.main-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgb(232, 229, 229);
+  border-radius: 0.3rem;
 }
 
 
-
-
-
-
-
-
-
-
-.content-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
+.main-card-content button {
+  background: red;
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.text-content h1 {
+  font-size: 35px;
+  color: rgb(153, 147, 147);
+}
+.text-content span {
+  color: red;
+}
+.para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 22px;
+}
+.text-content p {
+  font-size: 20px;
+  color: rgb(95, 91, 91);
+  padding: 10px;
+}
+.text-content {
+  padding: 10px;
+  width: 50%;
+  color: rgb(220, 152, 152);
+}
+.txt {
     
+  padding: 0 15px;
+  font-size: 15px;
+  
 }
-.content-container .content{
-    display: flex;   
-   
+
+
+.main-card-content img {
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.duration {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.duration .drt {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 5px;
+  padding: 0 10px  ;
+  
+}
+hr{
+  margin: 10px;
+}
+.duration .del{
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: auto;
+    margin: auto;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
     gap: 15px;
-    flex: 50%;
-   
-}
-.content-container .content span{
-    color: red;
-}
-.content-container .content h1{
-    font-size: 40px;
-}
-.content-container .content p{
-    font-size: 20px;
-    color: rgb(110, 107, 107);
-}
-.content-container .image{
-    flex: 35%;
-    position: relative;
-}
-.content-container .image img{
+  }
+
+  .manu {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .manu button {
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-container {
+    flex-direction: column-reverse;
+
+    text-align: center;
+  }
+  .content-container .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .main-card-section{
+    align-items: center;
+  }
+.main-card{
+    flex-direction: column;
+}
+.text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    
-    
-}
-.content button{
-    padding: .5rem 2rem;
-    background: red;
-    color: white;
-    font-size: 15px;
-    border: none;
-    border-radius: .3rem;
-    width: 8rem;
-    cursor: pointer;
-}
-.image p{
-    color: rgb(61, 60, 60);
-   
-
-}
-.web1{
-    border-radius: .2rem;
-    
-    font-size: 20px;
-    position: absolute;
-    top: 0;
-}
-.web2{
-    position: absolute;
-    top: 32%;
-    right: 0;
-      font-size: 18px;
-}
-.web3{
-    position: absolute;
-    bottom: 10%;
-    left: 35%;
-    font-size: 22px;
 }
 
 
-
-
-
-@media only screen and (max-width:600px){
-    body{
-     padding: auto;
-     margin: auto;
-        
-    }
-    nav{
-      
-      
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .manu{
-       justify-content: center;
-       align-items: center;
-        flex-direction: column;
-       
-    }
-    .manu button{
-        width: 7rem;
-        display: flex;
-        justify-content: center;
-        
-    }
-    
-    .content-container{
-        flex-direction: column-reverse;
-        
-       text-align: center;
-    }
-    .content-container .content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  
 }
