@@ -72,7 +72,7 @@ nav {
 .content-container .image {
   flex: 35%;
   position: relative;
-  background-color: rgb(206, 204, 204);
+  background-color: rgba(236, 234, 234, 0.856);
 }
 .content-container .image img {
   width: 100%;
