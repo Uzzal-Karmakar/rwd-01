@@ -72,6 +72,7 @@ nav {
 .content-container .image {
   flex: 35%;
   position: relative;
+  background-color: rgb(206, 204, 204);
 }
 .content-container .image img {
   width: 100%;
@@ -112,11 +113,14 @@ nav {
 .main-card-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 15px;
   margin-bottom: 20px;
 }
 .main-card {
   display: flex;
+  
+  
   gap: 25px;
 }
 .main-card h1 {
@@ -232,6 +236,7 @@ hr{
   }
   
   .main-card-section{
+  
     align-items: center;
   }
 .main-card{
@@ -243,6 +248,12 @@ hr{
     align-items: center;
     width: 100%;
 }
+.main-card-content .txt{
+  text-align: center;
+
+}
+
+
 
 
   
