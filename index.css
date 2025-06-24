@@ -1,12 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .max-width {
   max-width: 1040px;
   margin: auto;
-  margin-top: 10px;
 }
+html{
+  scroll-behavior: smooth;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -38,12 +42,16 @@ nav {
 .manu button i {
   padding-right: 5px;
 }
-.manu ul {
+.manu ul  {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
   gap: 15px;
+}
+.manu ul a{
+  text-decoration: none;
+  color: red;
 }
 
 .content-container {
@@ -54,7 +62,7 @@ nav {
 }
 .content-container .content {
   display: flex;
-
+  align-items: center;
   flex-direction: column;
   gap: 15px;
   flex: 50%;
@@ -72,6 +80,7 @@ nav {
 .content-container .image {
   flex: 35%;
   position: relative;
+  border-radius: 0.3rem;
   background-color: rgba(236, 234, 234, 0.856);
 }
 .content-container .image img {
@@ -115,12 +124,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   gap: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  width: 100%;
 }
 .main-card {
   display: flex;
-  
-  
   gap: 25px;
 }
 .main-card h1 {
@@ -134,7 +142,6 @@ nav {
   border-radius: 0.3rem;
 }
 
-
 .main-card-content button {
   background: red;
   color: white;
@@ -145,7 +152,7 @@ nav {
   cursor: pointer;
 }
 .text-content h1 {
-  font-size: 35px;
+  font-size: 45px;
   color: rgb(153, 147, 147);
 }
 .text-content span {
@@ -159,7 +166,7 @@ nav {
   font-size: 22px;
 }
 .text-content p {
-  font-size: 20px;
+  font-size: 25px;
   color: rgb(95, 91, 91);
   padding: 10px;
 }
@@ -169,41 +176,193 @@ nav {
   color: rgb(220, 152, 152);
 }
 .txt {
-    
   padding: 0 15px;
   font-size: 15px;
-  
 }
-
 
 .main-card-content img {
   width: 100%;
   border-radius: 0.3rem;
 }
 .duration {
-  padding: 5px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
+  padding: 0 10px;
 }
 .duration .drt {
   display: flex;
   flex-direction: column;
   font-size: 16px;
   gap: 5px;
-  padding: 0 10px  ;
+  padding: 0 20px;
+}
+hr {
+  width: 100%;
+}
+.duration .del {
+  text-decoration: line-through;
+}
+
+/* main-contact-section */
+
+#contact-text h1 {
+  font-size: 35px;
+  color: rgb(136, 133, 133);
+  padding: 10px 0;
+}
+#contact-text p {
+  font-size: 20px;
+  color: rgb(62, 62, 62);
+}
+.content-container{
+  flex: 50%;
+  width: 100%;
+}
+#contact-text {
+  margin: 20px 0;
+  width: 50%;
+  flex: 50%;
+}
+.input-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 25px;
+  background: rgb(255, 255, 255);
+}
+.input-content button {
+  width: 8rem;
+  padding: 10px;
+  border: none;
+  border-radius: 0.3rem;
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+
+.input-content input,
+textarea {
+  padding: 15px 35px;
+  border: 1px solid rgb(138, 136, 136);
+  outline: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  font-size: 21px;
+  color:rgb(185, 180, 180);
+}
+.input-content textarea{
+  resize: none;
+}
+
+.input-content div {
+  position: relative;
+}
+.input-content textarea{
+  padding: 35px;
+}
+.input-content div i {
+  padding: 0 5px;
+  position: absolute;
+  left: 1%;
+  bottom: 30%;
+  font-size: 20px;  
+  color: rgb(209, 76, 76);                                      px;
+}
+/* input-four-position */
+.input-four textarea{
+  padding: 15px 32px;
+  border: 1px solid rgb(138, 136, 136);
+  outline: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  font-size: 21px;
+  color:rgb(170, 167, 167);
+
+}
+.input-four .trt{
+  padding: 0 5px;
+  position: absolute;
+  left: 1%;
+  bottom: 50%;
+  font-size: 20px;  
+  color: rgb(221, 50, 50);  
+}
+
+/* about-contact-style */
+
+.about-contact{
+  display: flex;
+  gap: 25px;
+ 
+}
+/* about-style */
+  
+#about{
+  padding: 25px 15px;
+ border: none;
+ outline: none;
+ border-radius: .3rem;
+  display: flex;
+  width: 100%;
+  flex: 80%;
+  background: rgb(255, 250, 250);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   
 }
-hr{
-  margin: 10px;
+
+#about h1{
+  font-size: 45px;
+  color: red;
+  padding: 15px;
+ 
 }
-.duration .del{
-    text-decoration: line-through;
+#about p{
+  font-size: 20px;
+}
+
+
+/* footer-style */
+.alpha{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #000;
+  color: white;
+  padding: 25px 15px;
+
+}
+.alpha h1 {
+  color: red;
+}
+.alpha p{
+  color: rgb(170, 169, 169);
+  padding: 10px 10px;
+}
+.alpha span {
+  color: rgb(192, 192, 73);
+  padding-left: 10px;
+}
+.link{
+  margin-top:20px ;
+}
+
+.link a{
+  margin: 0 10px;
+  font-size: 30px;
+  
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    padding: auto;
+  #all-container{
+    text-align: center;
     margin: auto;
+    padding: auto;
   }
   nav {
     display: flex;
@@ -223,38 +382,68 @@ hr{
     display: flex;
     justify-content: center;
   }
+  .main-card-content img {
+    width: 100%;
+  }
 
   .content-container {
     flex-direction: column-reverse;
-
     text-align: center;
   }
   .content-container .content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
   }
-  
-  .main-card-section{
-  
-    align-items: center;
-  }
-.main-card{
-    flex-direction: column;
-}
-.text-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+  .main-card-section {
     width: 100%;
+    align-items: center;
+  }
+  .main-card {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .text-content {
+    text-align: center;
+    width: 100%;
+  }
+  .main-card-content .txt {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .about-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto auto;
+    flex-direction: column;
+    width: 100%;
+   
+    
+    
 }
-.main-card-content .txt{
-  text-align: center;
-
-}
-
-
-
-
+#contact-text{
   
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+}
+.input-content{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.contact-container{
+  width: 100%;
+}
 }
